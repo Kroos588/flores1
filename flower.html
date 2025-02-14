@@ -9,29 +9,8 @@
     <title>Flower</title>
   </head>
   <body class="container">
-
     
-<audio id="myAudio" controls autoplay>
-    <source src="audio/flowers.mp3" type="audio/mpeg">
-    Tu navegador no soporta el elemento de audio.
-</audio>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let audio = document.getElementById("myAudio");
-
-        // Verifica si el archivo se carga correctamente
-        audio.oncanplaythrough = function() {
-            console.log("✅ El audio se ha cargado correctamente.");
-        };
-
-        // Detecta errores al cargar el audio
-        audio.onerror = function() {
-            console.error("❌ Error al cargar el audio. Verifica la ruta.");
-        };
-    });
-</script>
-
+<audio src="audio/flowers.mp3" autoplay></audio>
     
     <div id="lyrics">
      
